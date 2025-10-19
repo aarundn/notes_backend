@@ -6,12 +6,10 @@ import org.example.notes_backend.data.repository.NoteRepository
 import org.springframework.web.bind.annotation.*
 import java.time.Instant
 
-// POST http://localhost:8085/notes
-// GET http://localhost:8085/notes?ownerId=123
-// DELETE http://localhost:8085/notes/123
+
 
 @RestController
-@RequestMapping("/notes")
+@RequestMapping("/note")
 class NoteController(
     private val repository: NoteRepository,
 ) {
